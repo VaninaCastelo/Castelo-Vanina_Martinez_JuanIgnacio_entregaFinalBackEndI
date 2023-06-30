@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Centro Odontologico</title>
+</head>
+<body>
+<nav>
+    <h2>Centro Odontologico</h2>
+    <ul>
+        <li>Usuario</li>
+        <li><img src="pngwing.com.png" alt="fotoPerfil"></li>
+    </ul>
+</nav>
+<main>
+    <section class="section-container">
+        <article class="pacientes">
+            <div>
+                <h3>Pacientes</h3>
+                <button type="submit" id="listado-pac">Listado de pacientes</button>
+                
+                <form id="formAgregarPac">
+                    <label for="nombrePaciente">Nombre:</label>
+                    <input type="text" id="nombrePaciente" required>
+                    <label for="apellidoPaciente">Apellido:</label>
+                    <input type="text" id="apellidoPaciente" required>
+                    <label for="dniPaciente">Dni:</label>
+                    <input type="text" id="dniPaciente" required>
+                    <label for="callePaciente">Calle:</label>
+                    <input type="text" id="callePaciente" required>
+                    <label for="numeroPaciente">Nro:</label>
+                    <input type="number" id="numeroPaciente" required>
+                    <label for="localidadPaciente">Localidad:</label>
+                    <input type="text" id="localidadPaciente" required>
+                    <label for="provinciaPaciente">Provincia:</label>
+                    <input type="text" id="provinciaPaciente" required>
+                    <button type="submit" id="agregar-pac">Agregar</button>
+                </form>
+                <form id="formBuscar">
+                    <label for="">
+                        <input type="text" placeholder="Buscar por ID" id="idBuscarPac">
+                    </label>
+                <button type="submit" id="buscar-pac">Buscar</button>
+                </form>
+            </div>
+        </article>
+        <article class="Odontologos">
+            <div>
+                <h3>Odontologos</h3>
+                <button type="submit" id="listado-odont">Listado de odontólogo</button>
+                <form id="formAgregarOdont">
+                    <label for="nombreOdontologo">Nombre:</label>
+                    <input type="text" id="nombreOdontologo" required>
+                    <label for="apellidoOdontologo">Apellido:</label>
+                    <input type="text" id="apellidoOdontologo" required>
+                    <label for="matriculaOdontologo">Matricula:</label>
+                    <input type="text" id="matriculaOdontologo" required>
+                    <button type="submit" id="agregar-odont">Agregar</button>
+                </form>
+                <form id="formBuscar">
+                    <label for="">
+                        <input type="text" placeholder="Buscar por ID" id="idBuscarOdont">
+                    </label>
+                <button type="submit" id="buscar-odont">Buscar</button>
+                </form>
+            </div>
+        </article>
+        <article class="turnos">
+            <div>
+                <div>
+                    <h3>Turnos</h3>
+                    <button type="submit" id="listado-turnos">Listado de turnos</button>
+                    <button type="button" id="registrar-turno">Registrar turno</button>
+                  </div>
+                  
+                  <table id="tabla-turnos">
+                    <thead>
+                      <tr>
+                        <th>Paciente</th>
+                        <th>Odontologo</th>
+                        <th>Fecha y Hora</th>
+                      </tr>
+                    </thead>
+                    <tbody id="lista-turnos-body">
+                      <!-- Aquí se agregarán las filas de turnos -->
+                    </tbody>
+                  </table>
+<!--
+            <div>
+                <h3>Turnos</h3>
+                <button type="submit" id="listado-turnos">Listado de turnos</button>
+                <button type="submit" id="turnos-semanales">Turnos Semanales</button>
+                <form id="formAgregarTurno">
+                    <label for="fechaTurno">Fecha:</label>
+                    <input type="text" id="fechaTurno" required>
+                    <label for="horaTurno">Hora:</label>
+                    <input type="text" id="horaTurno" required>
+                    <button type="submit" id="agregar-turno">Agregar</button>
+                </form>
+                <form id="formBuscar">
+                    <label for="">
+                        <input type="text" placeholder="Buscar por ID" id="idBuscarTurno">
+                    </label>
+                <button type="submit" id="buscar-turno">Buscar</button>
+                </form>
+            </div>
+        -->
+        </article>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap);
+
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    box-shadow: 0 4px 5px rgb(143, 148, 167);
+    position: sticky;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(5, 57, 51);
+    transition: all .5s ease-in-out;
+    margin-bottom: 20px;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+h2 {
+    margin-left: 10px; /* Margen izquierdo */
+    color: antiquewhite;
+  }
+  
+  ul {
+    margin-right: 10px; /* Margen derecho */
+    color: antiquewhite;
+    list-style-type: none;
+  }
+nav ul li img {
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+    
+  }
+  
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilo para la imagen de fondo */
+body {
+    background: url(hilo-dental.png) no-repeat center center fixed;
+    background-color: 50% ;
+    background-size: cover;
+  }
+  
+/* Estilos para las tarjetas */
+div {
+    background-color: #097676; /* Color de fondo celeste */
+    padding: 20px; /* Espaciado interno para el contenido */
+    margin-bottom: 20px; /* Margen inferior entre tarjetas */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+}
+div button {
+    margin-bottom: 15px; /* Separación de 15px entre los botones */
+}
+div form{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div form button{
+   margin-top: 15px;
+   margin-bottom: 15px;
+ }
+  /* Estilos adicionales */
+h3 {
+    margin-top: 0; /* Elimina el margen superior del título */
+    color: ivory; /* Texto en blanco marfil */
+    margin-bottom: 15px;
+}
+
+button {
+    margin-right: 10px; /* Margen derecho para los botones */
+    border-radius: 50%; /* Forma ovalada para los botones */
+    color: #008080; /* Color del texto en verde agua más oscuro */
+    text-align: center; /* Centrar el texto dentro de los botones */
+    padding: 8px 12px; /* Espaciado interno para el contenido del botón */
+    font-weight: bold; /* Aplicar negrita al texto dentro de los botones */
+}
+ 
+  /* Estilos para el contenedor de las tarjetas */
+  .section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinear las tarjetas en el centro horizontal */
+  }
+  
+  .section-container article {
+    flex: 0 0 calc(33.33% - 20px); /* Tamaño y separación de las tarjetas */
+    margin: 10px; /* Margen entre las tarjetas */
+  }
+  #pacienteSelect, #odontologoSelect {
+    width: 150px;
+    height: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+div h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+div button {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+#contenedorRegistroTurnos {
+  height: 500px;
+  width: 60%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+}
+#tabla-turnos {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: ivory;
+}
+
+#tabla-turnos th {
+  background-color: rgb(12, 110, 113);
+  color: white;
+  padding: 10px;
+}
+
+#tabla-turnos td {
+  padding: 10px;
+  border: 1px solid black;
+}
